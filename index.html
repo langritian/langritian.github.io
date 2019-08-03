@@ -173,7 +173,6 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="总结喔"><a href="#总结喔" class="headerlink" title="总结喔"></a>总结喔</h2><p>首先node下载地址：nodejs.org</p>
-<p><img src="C:%5CUsers%5C%E9%AD%8D%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564851218900.png" alt="1564851218900"></p>
 <p>进入cmd（管理员）</p>
 <p>node -v     npm -v查看版本</p>
 <hr>
@@ -190,29 +189,23 @@
 <p>cd “名字” 进入文件夹</p>
 <hr>
 <p>注意这里要提前安装git 安装好之后建议使用git的cmd进行下面操作</p>
-<p><img src="C:%5CUsers%5C%E9%AD%8D%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564852141351.png" alt="1564852141351"></p>
 <p>生成博客：hexo init   (以管理员运行git cmd   进入刚才创建的文件夹)</p>
-<p><img src="C:%5CUsers%5C%E9%AD%8D%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564852402660.png" alt="1564852402660"></p>
 <p>启动博客：hexo s</p>
-<p><img src="C:%5CUsers%5C%E9%AD%8D%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564852456727.png" alt="1564852456727"></p>
 <p>网站进入 <a href="http://localhost:4000就可以看见创建好的" target="_blank" rel="noopener">http://localhost:4000就可以看见创建好的</a></p>
 <hr>
 <p>先断开一下：直接Ctrl+C</p>
 <p>创建文章：hexo n “文章名字”  </p>
-<p><img src="C:%5CUsers%5C%E9%AD%8D%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564852932627.png" alt="1564852932627"></p>
 <p>进入到文章所在位置：cd source/_posts</p>
 <p>修改文章:可直接找到位置后直接打开编辑</p>
 <p>我用的是typora</p>
 <p>退回到刚才的文件夹内cd ../..</p>
 <p>清理一下: hexo clean</p>
 <p>之后生成一下：hexo g</p>
-<p><img src="C:%5CUsers%5C%E9%AD%8D%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564853266907.png" alt="1564853266907"></p>
 <p>重新启动一下：hexo s</p>
 <p>刷新网页可以见到内容</p>
 <hr>
 <p>登录<a href="https://github.com/注册账号" target="_blank" rel="noopener">https://github.com/注册账号</a></p>
 <p>之后创建一个新的github仓库</p>
-<p><img src="C:%5CUsers%5C%E9%AD%8D%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564853502932.png" alt="1564853502932"></p>
 <p>名字需要注意格式！！</p>
 <p>“你的名字”.github.io</p>
 <hr>
@@ -220,27 +213,23 @@
 <p>cnpm install –save hexo-deployer-git</p>
 <p>设置 _config.yml (重点哟)</p>
 <p>notepad _config.yml</p>
-<p><img src="C:%5CUsers%5C%E9%AD%8D%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564853858544.png" alt="1564853858544"></p>
 <p>在最下面</p>
-<p>deploy:<br>  type: git<br>  repo: 见下图<br>  branch: master</p>
+<p>deploy:<br>  type: git<br>  repo: “你的地址”<br>  branch: master</p>
 <p><strong>注意冒号后面的空格</strong></p>
-<p><img src="C:%5CUsers%5C%E9%AD%8D%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564854061979.png" alt="1564854061979"></p>
 <p>改完之后部署：hexo d</p>
 <hr>
-<p><img src="C:%5CUsers%5C%E9%AD%8D%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564854246107.png" alt="1564854246107"></p>
 <p>在这里会让你输入你的名字和密码</p>
 <p>如果报错（tell me who you are）按照他run下面说的去做就ok</p>
 <p>刷新你的仓库就可以看到上传的新东西</p>
 <hr>
 <p>打开最后面的地址就可以看到你的博客了</p>
-<p><img src="C:%5CUsers%5C%E9%AD%8D%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564854418903.png" alt="1564854418903"></p>
 <hr>
 <h2 id="换主题"><a href="#换主题" class="headerlink" title="换主题"></a>换主题</h2><p>这个：github.com/litten/hexo-theme-yilia</p>
 <p>返回你的文件夹</p>
 <p>git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</p>
 <p>他存在于themes文件夹里</p>
 <p>安装要修改 _config.yml</p>
-<p><img src="C:%5CUsers%5C%E9%AD%8D%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564854735551.png" alt="1564854735551"></p>
+<p>theme: yilia</p>
 <p>把这个改成yilia就ok</p>
 <p>清理一下 hexo clean</p>
 <p>生成一下 hexo g</p>
